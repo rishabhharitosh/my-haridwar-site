@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panchang - Haridwar Ke Purohit</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #f0fff0, #f9fbe7);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .header {
+      background: linear-gradient(to right, #229954, #28a745);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .header p {
+      font-size: 1.2rem;
+      margin-bottom: 0;
+    }
+    .iframe-wrapper {
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    iframe {
+      border-radius: 12px;
+    }
+    .back-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>📿 Hindu Panchang – Haridwar</h1>
+    <p>Daily Tithi, Nakshatra, Rahukaal & more (via Drik Panchang)</p>
+  </div>
+
+  <div class="iframe-wrapper">
+    <iframe src="https://www.drikpanchang.com/?geoname-id=1269843"
+            width="100%" height="800" frameborder="0"
+            style="border: none; border-radius: 12px;"></iframe>
+  </div>
+
+  <div class="back-button">
+    <a href="index.html" class="btn btn-lg btn-success px-4">⬅️ Back to Home</a>
+  </div>
+
+</body>
+</html>
