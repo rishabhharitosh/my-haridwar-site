@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Haridwar Darshan Package | ₹4500 Per Person</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Haridwar Darshan Package including Ganga Aarti, Mansa Devi & Chandi Devi Ropeway, Daksh Mandir, Dakshini Kali & Bilkeshwar Temple">
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f4fff6;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #186732;
+}
+
+.price {
+  text-align: center;
+  font-size: 22px;
+  color: #d35400;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.slideshow {
+  position: relative;
+  max-width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+}
+
+.slideshow img.active {
+  display: block;
+}
+
+ul {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.note {
+  background: #e9fff0;
+  padding: 15px;
+  border-left: 5px solid #186732;
+  margin: 20px 0;
+}
+
+.whatsapp-btn {
+  display: block;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 15px 25px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 30px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Haridwar Darshan Package</h1>
+  <div class="price">₹4500 Per Person</div>
+
+  <!-- Slideshow -->
+  <div class="slideshow">
+    <img src="img/arti.jpg" class="active">
+    <img src="img/mansa-devi.jpg">
+    <img src="img/chandi-devi.jfif">
+    <img src="img/daksh-mandir.JFIF">
+    <img src="img/dakshini-kali.jpg">
+    <img src="img//bilkeshwar.jpg">
+  </div>
+
+  <h2>Package Includes</h2>
+  <ul>
+    <li>Ganga Aarti at Har Ki Pauri</li>
+    <li>Mansa Devi Ropeway Darshan</li>
+    <li>Chandi Devi Ropeway Darshan</li>
+    <li>Daksh Prajapati Mandir</li>
+    <li>Dakshini Kali Mandir</li>
+    <li>Bilkeshwar Mahadev Temple</li>
+  </ul>
+
+  <div class="note">
+    <strong>Note:</strong> Mansa Devi & Chandi Devi darshan ropeway se karaya jayega.
+  </div>
+
+  <!-- WhatsApp -->
+  <a class="whatsapp-btn"
+     href="https://wa.me/919528529070?text=Haridwar%20Darshan%20Package%20Booking%0APrice:%20₹4500%20per%20person%0AIncludes:%20Ganga%20Aarti,%20Mansa%20Devi%20Ropeway,%20Chandi%20Devi%20Ropeway,%20Daksh%20Mandir,%20Dakshini%20Kali,%20Bilkeshwar%20Temple"
+     target="_blank">
+     📲 Book on WhatsApp
+  </a>
+
+</div>
+
+<script>
+let slides = document.querySelectorAll(".slideshow img");
+let index = 0;
+
+setInterval(() => {
+  slides[index].classList.remove("active");
+  index = (index + 1) % slides.length;
+  slides[index].classList.add("active");
+}, 3000);
+</script>
+
+</body>
+</html>
