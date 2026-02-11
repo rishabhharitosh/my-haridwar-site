@@ -12,8 +12,6 @@
 
 <link rel="canonical" href="https://haridwarkepurohit.com/haridwar-darshan.html">
 
-
-<!-- Bootstrap CSS (same as index) -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <style>
@@ -25,76 +23,119 @@ body{
 }
 .container{max-width:1000px;margin:auto;padding:20px;}
 h1{text-align:center;color:#186732;margin-bottom:10px;}
-.price{text-align:center;font-size:22px;color:#d35400;font-weight:bold;margin-bottom:30px;}
-.place{background:#fff;margin-bottom:30px;padding:20px;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.08);}
-.place img{width:100%;border-radius:10px;margin-bottom:15px;}
+.price{text-align:center;font-size:24px;color:#d35400;font-weight:bold;margin-bottom:30px;}
+
+.place{
+  background:#fff;
+  margin-bottom:30px;
+  padding:20px;
+  border-radius:16px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+.place img{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:15px;
+  max-height:380px;
+  object-fit:cover;
+}
 .place h2{color:#186732;margin-bottom:10px;}
-.place p{font-size:17px;line-height:1.7;}
-.note{background:#e9fff0;padding:15px;border-left:5px solid #186732;margin:30px 0;font-size:16px;}
-.whatsapp-btn{display:block;width:fit-content;margin:40px auto;padding:15px 28px;background:#25d366;color:#fff;text-decoration:none;font-size:18px;border-radius:30px;font-weight:bold;}
+.place p{font-size:17px;line-height:1.7;color:#444;}
+
+/* Stylish Package Box */
+.stylish-note{
+  background:linear-gradient(135deg,#fff7e6,#fff);
+  border-left:5px solid #186732;
+  border-radius:14px;
+  padding:18px 20px;
+  box-shadow:0 6px 16px rgba(0,0,0,0.08);
+  margin:40px 0 25px;
+}
+.stylish-note strong{font-size:1.1rem;color:#186732;}
+.package-list{list-style:none;padding-left:0;margin:12px 0 0;}
+.package-list li{
+  padding:6px 0 6px 28px;
+  position:relative;
+  font-size:16px;
+}
+.package-list li::before{
+  content:"✔";
+  position:absolute;
+  left:0;
+  color:#27ae60;
+  font-weight:bold;
+}
+
+/* Booking Card */
+.stylish-booking{
+  background:#ffffff;
+  border-radius:18px;
+  padding:24px 20px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.12);
+  border:1px solid #f1f1f1;
+  margin-bottom:40px;
+}
+.stylish-booking h3{text-align:center;margin-bottom:18px;font-weight:600;}
+.stylish-booking input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  margin-bottom:12px;
+}
+.stylish-booking input:focus{
+  border-color:#186732;
+  outline:none;
+  box-shadow:0 0 0 2px rgba(24,103,50,0.15);
+}
+
+/* WhatsApp CTA */
+.whatsapp-btn{
+  width:100%;
+  background:linear-gradient(135deg,#25D366,#128C7E);
+  color:#fff;
+  border:none;
+  border-radius:14px;
+  padding:14px 16px;
+  font-size:18px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s ease;
+}
+.whatsapp-btn:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(37,211,102,0.35);
+}
 </style>
 </head>
 
 <body>
 
-<!-- ===== HEADER (COPIED FROM INDEX.HTML) ===== -->
 <header class="border-bottom" style="background-color:#fdebd0;padding:6px 0;">
 <div class="container">
 <nav class="navbar navbar-expand-lg navbar-light px-0">
-
 <a class="navbar-brand" href="index.html">
 <img src="img/logo.webp" alt="Haridwar Ke Purohit Logo" style="height:45px;">
 </a>
-
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
 <span class="navbar-toggler-icon"></span>
 </button>
-
 <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
 <ul class="navbar-nav text-center">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html" style="color:#17202a;">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="index.html#booking" style="color:#17202a;">Booking</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="index.html#about" style="color:#17202a;">About Us</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="index.html#history" style="color:#17202a;">History</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="index.html#contact" style="color:#17202a;">Contact</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link px-3" href="haridwar-darshan.html" style="color:#186732;font-weight:600;">
-🔱 Haridwar Darshan
-</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link px-3" href="panchang.html" style="color:#17202a;">🗓 Panchang</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link px-3" href="blog.html" style="color:#17202a;">📖 Blog</a>
-</li>
-
+<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#booking">Booking</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#about">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#history">History</a></li>
+<li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+<li class="nav-item"><a class="nav-link fw-bold" style="color:#186732;" href="haridwar-darshan.html">🔱 Haridwar Darshan</a></li>
+<li class="nav-item"><a class="nav-link" href="panchang.html">🗓 Panchang</a></li>
+<li class="nav-item"><a class="nav-link" href="blog.html">📖 Blog</a></li>
 </ul>
 </div>
-
 </nav>
 </div>
 </header>
 
-<!-- ===== PAGE CONTENT ===== -->
 <div class="container mt-5">
 
 <h1>Haridwar Darshan Package</h1>
@@ -136,24 +177,22 @@ h1{text-align:center;color:#186732;margin-bottom:10px;}
 <p>Peaceful Shiva temple where Maa Parvati worshipped Lord Shiva.</p>
 </div>
 
-<div class="note">
-<strong>Package Includes:</strong><br>
-✔ Ganga Aarti at Har Ki Pauri<br>
-✔ Mansa Devi Ropeway Darshan<br>
-✔ Chandi Devi Ropeway Darshan<br>
-✔ All major temples of Haridwar<br>
-✔ Ideal for families & senior citizens
+<div class="stylish-note">
+<strong>Package Includes:</strong>
+<ul class="package-list">
+<li>Ganga Aarti at Har Ki Pauri</li>
+<li>Mansa Devi Ropeway Darshan</li>
+<li>Chandi Devi Ropeway Darshan</li>
+<li>All major temples of Haridwar</li>
+<li>Ideal for families & senior citizens</li>
+</ul>
 </div>
-<!-- ===== BOOKING FORM ===== -->
-<div class="booking-box">
+
+<div class="stylish-booking">
 <h3>📲 Book Haridwar Darshan</h3>
-
 <input type="text" id="name" placeholder="Full Name" required>
-
 <input type="date" id="date" required>
-
 <input type="number" id="persons" min="1" placeholder="Number of Persons" required>
-
 <button class="whatsapp-btn" onclick="sendWhatsApp()">Book on WhatsApp</button>
 </div>
 
@@ -182,8 +221,5 @@ function sendWhatsApp(){
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
-
-
