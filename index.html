@@ -142,6 +142,104 @@
       ]
     }
     </script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Haridwar Ke Purohit",
+  "url":"https://haridwarkepurohit.com",
+  "logo":"https://haridwarkepurohit.com/assets/images/logo.png",
+  "telephone":"+91-9528529070",
+  "email":"info@haridwarkepurohit.com",
+  "sameAs":[
+    "https://www.facebook.com/",
+    "https://www.instagram.com/",
+    "https://www.youtube.com/"
+  ]
+}
+</script>
+
+    <script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"ReligiousOrganization",
+ "name":"Haridwar Ke Purohit",
+ "url":"https://haridwarkepurohit.com",
+ "telephone":"+91-9528529070",
+ "image":"https://haridwarkepurohit.com/assets/images/logo.png",
+ "priceRange":"₹₹",
+ "address":{
+   "@type":"PostalAddress",
+   "streetAddress":"Har Ki Pauri",
+   "addressLocality":"Haridwar",
+   "addressRegion":"Uttarakhand",
+   "postalCode":"249401",
+   "addressCountry":"IN"
+ },
+ "geo":{
+   "@type":"GeoCoordinates",
+   "latitude":"29.9457",
+   "longitude":"78.1642"
+ },
+ "openingHours":"Mo-Su 00:00-23:59",
+ "areaServed":"Haridwar",
+ "sameAs":[
+   "https://www.facebook.com/",
+   "https://www.instagram.com/"
+ ]
+}
+</script>
+    <script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebPage",
+ "name":"Haridwar Ke Purohit",
+ "speakable":{
+ "@type":"SpeakableSpecification",
+ "cssSelector":[
+ ".hero-title",
+ ".hero-description",
+ ".faq-section"
+ ]
+ }
+}
+    </script>
+    <script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"FAQPage",
+"mainEntity":[
+
+{
+"@type":"Question",
+"name":"How can I book Pind Daan in Haridwar?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"You can book Pind Daan by calling +91 9528529070 or through our website."
+}
+},
+
+{
+"@type":"Question",
+"name":"Can I book Ganga Aarti online?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes, online booking assistance is available."
+}
+},
+
+{
+"@type":"Question",
+"name":"Do you perform Rudrabhishek?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes, Rudrabhishek is performed by experienced Vedic priests with complete rituals."
+}
+}
+
+]
+}
+</script>
 </head>
 <body>
 
@@ -480,13 +578,69 @@
     document.getElementById("year").textContent = new Date().getFullYear();
 
     // Chat Logic
-    var knowledge = [
-      { keywords: ["pind daan", "pinddaan", "shradh"], answer: "Pind Daan in Haridwar is performed at Har Ki Pauri for ancestral moksha under verified Vedic paths." },
-      { keywords: ["asthi visarjan", "asthi immersion"], answer: "Asthi Visarjan is systematically completed directly within designated pure flows of the Ganga river." },
-      { keywords: ["ganga aarti", "aarti timing"], answer: "Ganga Aarti runs daily at Har Ki Pauri precisely during sunset hours." },
-      { keywords: ["cost", "price", "charges", "fees"], answer: "Pooja ritual costs range dynamically between ₹2100 to ₹5100 depending on your customizable samagri size." },
-      { keywords: ["number", "contact", "phone"], answer: "You can easily call or reach our main purohit directly at +91 9528529070." }
-    ];
+   var knowledge = [
+
+{
+keywords:["pind daan","pinddaan","shradh","pind"],
+answer:"Pind Daan in Haridwar is performed at Har Ki Pauri by experienced Vedic priests. We provide complete arrangements including puja samagri and guidance. Call +91 9528529070 for booking."
+},
+
+{
+keywords:["asthi visarjan","asthi","ashes","immersion"],
+answer:"Asthi Visarjan is performed at the sacred Ganga Ghats in Haridwar according to Vedic traditions. Same-day arrangements are available."
+},
+
+{
+keywords:["ganga aarti","aarti","har ki pauri"],
+answer:"You can book participation in the divine Ganga Aarti at Har Ki Pauri. Contact us for timings and booking assistance."
+},
+
+{
+keywords:["rudrabhishek","shiv","mahashivratri"],
+answer:"Rudrabhishek Puja is performed for health, prosperity and peace. Special bookings are available on Mahashivratri."
+},
+
+{
+keywords:["narayan bali"],
+answer:"Narayan Bali Puja is performed to help resolve Pitru Dosha and ancestral issues under the guidance of experienced Vedic priests."
+},
+
+{
+keywords:["tripindi","tripindi shradh"],
+answer:"Tripindi Shradh is performed in Haridwar for the peace of departed souls according to Vedic traditions."
+},
+
+{
+keywords:["mundan","tonsure"],
+answer:"Mundan Sanskar is performed at Har Ki Pauri with complete Vedic rituals."
+},
+
+{
+keywords:["price","cost","fees","charges"],
+answer:"The cost depends on the type of ritual and requirements. Please call +91 9528529070 or message us on WhatsApp for details."
+},
+
+{
+keywords:["phone","number","contact","call"],
+answer:"You can contact Haridwar Ke Purohit at +91 9528529070."
+},
+
+{
+keywords:["booking","book","appointment"],
+answer:"Bookings can be made through our website or by calling +91 9528529070."
+},
+
+{
+keywords:["location","address","where"],
+answer:"We are located near Har Ki Pauri, Haridwar, Uttarakhand."
+},
+
+{
+keywords:["timing","time","open"],
+answer:"We are available every day. Please contact us before arriving so arrangements can be made."
+}
+
+];
 
     function sendMessage(){
       var inputField = document.getElementById("chat-input");
