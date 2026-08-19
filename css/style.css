@@ -1,2 +1,21 @@
 body { font-family: 'Segoe UI', sans-serif; background-color: #f9f6f0; }
 h1, h2 { color: #186732; }
+
+/* Brand identity: Sanatan saffron as the primary accent across every page */
+:root {
+  --brand-saffron: #f39c12;
+  --brand-green: #186732;
+  --brand-dark: #17202a;
+  --brand-cream: #fdebd0;
+}
+/* Continuous auto-scrolling image gallery (homepage) */
+.gallery-slider { overflow: hidden; position: relative; -webkit-mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%); mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%); }
+.gallery-track { display: flex; gap: 16px; width: max-content; animation: gallery-scroll 32s linear infinite; }
+.gallery-track:hover { animation-play-state: paused; }
+.gallery-item { position: relative; flex: 0 0 auto; width: 300px; height: 210px; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.15); border: 3px solid var(--brand-cream); }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-item .gallery-caption { position: absolute; left: 0; right: 0; bottom: 0; padding: 8px 12px; background: linear-gradient(transparent, rgba(0,0,0,.65)); color: #fff; font-weight: 600; font-size: 14px; }
+@keyframes gallery-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (max-width: 768px) {
+  .gallery-item { width: 220px; height: 150px; }
+}
