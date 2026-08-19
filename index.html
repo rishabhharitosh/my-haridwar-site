@@ -13,6 +13,7 @@
     </script>
 
     <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pind Daan in Haridwar | Asthi Visarjan | Ganga Aarti Booking</title>
     <meta name="description" content="Book authentic Pind Daan, Asthi Visarjan, and Ganga Aarti at Har Ki Pauri with trusted Tirth Purohits. Real-time Vedic rituals and family genealogy records.">
@@ -26,8 +27,13 @@
     <meta property="og:url" content="https://haridwarkepurohit.com/">
     <meta property="og:type" content="website">
 
+    <!-- Speed: preconnect to third-party origins -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     
     <!-- Custom Styles -->
     <style>
@@ -121,52 +127,18 @@
         #chat-send { background: #25D366; border: none; color: white; width: 35px; height: 35px; border-radius: 50%; cursor: pointer; }
     </style>
 
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Haridwar Ke Purohit",
-      "image": "https://haridwarkepurohit.com/img/logo.png",
-      "description": "Trusted Purohits in Haridwar for Pind Daan, Asthi Visarjan, Ganga Aarti, Narayani Pooja, and Vedic rituals.",
-      "url": "https://haridwarkepurohit.com",
-      "telephone": "+91-9528529070",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Haridwar",
-        "addressRegion": "Uttarakhand",
-        "addressCountry": "IN"
-      },
-      "sameAs": [
-        "https://wa.me/919528529070"
-      ]
-    }
-    </script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"Organization",
-  "name":"Haridwar Ke Purohit",
-  "url":"https://haridwarkepurohit.com",
-  "logo":"https://haridwarkepurohit.com/assets/images/logo.png",
-  "telephone":"+91-9528529070",
-  "email":"info@haridwarkepurohit.com",
-  "sameAs":[
-    "https://www.facebook.com/",
-    "https://www.instagram.com/",
-    "https://www.youtube.com/"
-  ]
-}
-</script>
-
+    <!-- Schema Markup: single consolidated business entity (was 3 overlapping blocks before) -->
     <script type="application/ld+json">
 {
  "@context":"https://schema.org",
  "@type":"ReligiousOrganization",
  "name":"Haridwar Ke Purohit",
+ "description":"Trusted Tirth Purohits in Haridwar for Pind Daan, Asthi Visarjan, Ganga Aarti, Online Pooja, Narayani Pooja and Vedic rituals.",
  "url":"https://haridwarkepurohit.com",
+ "logo":"https://haridwarkepurohit.com/img/logo.png",
+ "image":"https://haridwarkepurohit.com/img/logo.png",
  "telephone":"+91-9528529070",
- "image":"https://haridwarkepurohit.com/assets/images/logo.png",
+ "email":"haridwarkepurohit@gmail.com",
  "priceRange":"₹₹",
  "address":{
    "@type":"PostalAddress",
@@ -182,8 +154,9 @@
    "longitude":"78.1642"
  },
  "openingHours":"Mo-Su 00:00-23:59",
- "areaServed":"Haridwar",
+ "areaServed":"Worldwide",
  "sameAs":[
+   "https://wa.me/919528529070",
    "https://www.facebook.com/",
    "https://www.instagram.com/"
  ]
@@ -258,37 +231,37 @@
 <body>
 
   <!-- Navbar -->
-  <header class="border-bottom sticky-top" style="background-color: #fdebd0;">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light py-2">
-        <a class="navbar-brand" href="#">
-          <img alt="Haridwar Ke Purohit Logo" loading="lazy" src="img/logo.webp" style="height: 45px;"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+  <header class="site-header border-bottom sticky-top" style="background-color:#fdebd0; padding:6px 0;">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light py-2">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo.webp" alt="Haridwar Ke Purohit Logo" style="height:45px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
           <ul class="navbar-nav text-center align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-            <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
-            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-            <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            <li class="nav-item"><a class="nav-link px-3 fw-bold" href="haridwar-darshan.html" style="color:#186732;">🔱 Darshan Tour</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="pind-daan-haridwar.html">Pind Daan</a></li>
+            <li class="nav-item"><a class="nav-link" href="asthi-visarjan.html">Asthi Visarjan</a></li>
+            <li class="nav-item"><a class="nav-link" href="ganga-aarti-haridwar.html">Ganga Aarti</a></li>
+            <li class="nav-item"><a class="nav-link" href="other-pooja-services.html">Other Poojas</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="online-pooja-booking.html" style="color:#f39c12;">🙏 Online Pooja</a></li>
+            <li class="nav-item"><a class="nav-link fw-bold" href="haridwar-darshan.html" style="color:#186732;">🔱 Darshan Tour</a></li>
             <li class="nav-item"><a class="nav-link" href="panchang.html">🗓 Panchang</a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">📖 Blog</a></li>
           </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero Section -->
   <section class="hero-section text-center">
     <div class="container">
       <h1 class="display-5 fw-bold text-warning mb-3">Ganga Aarti, Pind Daan & Asthi Visarjan in Haridwar</h1>
-      <p class="lead mx-auto mb-4" style="max-width: 750px;">Book trusted Tirth Purohits at Har Ki Pauri for authentic Vedic rituals, ancestor peace ceremonies, and seamless divine experiences.</p>
+      <p class="lead mx-auto mb-4" style="max-width: 750px;">Book a trusted, family Tirth Purohit at Har Ki Pauri for authentic Vedic rituals and ancestral ceremonies — in person, or online if you can't travel to Haridwar.</p>
       <div class="fs-4 fw-bold mb-4">📞 Call / WhatsApp: <a href="tel:+919528529070" class="text-white text-decoration-none">+91 9528529070</a></div>
       <a href="https://wa.me/919528529070" class="btn btn-success btn-lg px-4 fw-bold shadow-sm">📲 Book on WhatsApp</a>
     </div>
@@ -305,11 +278,22 @@
     </div>
   </section>
 
+  <!-- Online Pooja Booking Highlight (for NRIs & devotees who cannot travel) -->
+  <section class="py-5 text-center" style="background:#17202a;">
+    <div class="container">
+      <div class="p-4 p-md-5 rounded shadow-sm mx-auto" style="max-width: 800px; background: linear-gradient(135deg, #fff7e6, #fdebd0);">
+        <h4 class="fw-bold text-dark mb-2">🙏 Living Outside Haridwar? Book Your Pooja Online</h4>
+        <p class="mb-3 text-muted">For NRIs and devotees who cannot travel — Pind Daan, Asthi Visarjan, Ganga Pooja, Tarpan &amp; Sankalp performed on your behalf at Har Ki Pauri. Pay a small advance online, watch it live on WhatsApp, and give daan-dakshina after your sankalp is complete.</p>
+        <a href="online-pooja-booking.html" class="btn btn-warning fw-bold px-4">🙏 Book Online Pooja →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- About Tirth Purohit -->
   <section class="bg-overlay-sec" style="background-image: url('img/bahi.webp');">
     <div class="container text-center">
       <h2 class="text-warning fw-bold mb-4">🧘‍♂️ Who is a Tirth Purohit?</h2>
-      <p class="lead mx-auto mb-4" style="max-width: 900px;">A Tirth Purohit is a learned Brahmin priest who serves as the custodian of generations-old lineage records (<em>Bahi Khata</em>). They structurally guide devotees through sacred lifecycle and ancestral rituals across ancient pilgrimage destinations like Haridwar.</p>
+      <p class="lead mx-auto mb-4" style="max-width: 900px;">A Tirth Purohit is a learned Brahmin priest who acts as custodian of generations-old family lineage records (<em>Bahi Khata</em>). They guide devotees, step by step, through sacred lifecycle and ancestral rituals at pilgrimage sites like Haridwar — the way their forefathers have for our families before us.</p>
       <div class="row text-start justify-content-center mx-auto" style="max-width: 600px;">
         <div class="col-12 mb-2">🔹 <strong>Pind Daan:</strong> For ancestors’ peace and ultimate salvation (Moksha).</div>
         <div class="col-12 mb-2">🔹 <strong>Asthi Visarjan:</strong> Systematic ash immersion rituals in holy Ganga.</div>
@@ -317,6 +301,17 @@
         <div class="col-12 mb-2">🔹 <strong>Genealogy Records:</strong> Verifying and updating ancestral logs.</div>
       </div>
       <p class="mt-4 fst-italic text-warning fs-5">"Ek Tirth Yatra bina Tirth Purohit ke adhoori hai."</p>
+    </div>
+  </section>
+
+  <!-- Find Your Kul Purohit -->
+  <section class="py-5 text-center" style="background:#fff7e6;">
+    <div class="container">
+      <div class="p-4 p-md-5 rounded shadow-sm mx-auto bg-white" style="max-width: 800px; border: 1px solid #f3e3c3;">
+        <h4 class="fw-bold mb-2" style="color:#186732;">🔍 Want to Find Your Own Kul Purohit in Haridwar?</h4>
+        <p class="mb-3 text-muted">Every family in Haridwar's Panda-Purohit tradition has records kept in a specific Purohit's <em>Bahi Khata</em> (ancestral register). To trace and connect with your own family's registered Kul Purohit, visit <strong>Kutumb Connect</strong>.</p>
+        <a href="https://kutumbconnect.in" target="_blank" rel="noopener" class="btn fw-bold px-4 text-white" style="background:#186732;">🔍 Find My Kul Purohit →</a>
+      </div>
     </div>
   </section>
 
@@ -348,7 +343,7 @@
         </div>
         <div class="col-md-7">
           <h3 class="text-success fw-bold">🚡 VIP Darshan (Udan Khatola)</h3>
-          <p class="text-muted">Skip crowds with fast-track direct entry loops via the Udan Khatola ropeway system covering hilltop shrines of Mansa Devi and Chandi Devi, complete with professional personal transit assistance.</p>
+          <p class="text-muted">Skip the long queues with fast-track entry on the Udan Khatola ropeway to the hilltop shrines of Mansa Devi and Chandi Devi. We arrange your tickets and accompany you throughout for a smooth, comfortable darshan.</p>
         </div>
       </div>
 
@@ -358,7 +353,7 @@
         </div>
         <div class="col-md-7">
           <h3 class="text-success fw-bold">🕉️ Pind Daan Rituals</h3>
-          <p class="text-muted">Fulfill critical filial duties by coordinating strict Vedic scriptural Pind Daan rituals alongside the ghats to eliminate ancestral obligations under the expert leadership of Purohit Rishabh Haritosh.</p>
+          <p class="text-muted">Perform Pind Daan for the peace and moksha of your ancestors, exactly as laid out in scripture, right on the ghats of Haridwar — guided personally by Purohit Rishabh Haritosh. Can't travel? We also perform it on your behalf through our <a href="online-pooja-booking.html">Online Pooja Booking</a>.</p>
           <a href="pind-daan-haridwar.html" class="btn btn-sm btn-link text-success ps-0 fw-bold">📿 Book Pind Daan Now</a>
         </div>
       </div>
@@ -369,7 +364,7 @@
         </div>
         <div class="col-md-7">
           <h3 class="text-success fw-bold">🌊 Asthi Visarjan</h3>
-          <p class="text-muted">Ensure systematic transition pathways for the departed. We arrange proper riverboats, specialized samagri sets, and standard Vedic processional rules at authentic holy zones.</p>
+          <p class="text-muted">A respectful, correctly-performed immersion of ashes in the holy Ganga. We arrange the boat, puja samagri, and complete Vedic rites at authentic ghats, so your family can focus on saying goodbye, not logistics.</p>
           <a href="asthi-visarjan.html" class="btn btn-sm btn-link text-success ps-0 fw-bold">🌊 Book Asthi Visarjan</a>
         </div>
       </div>
@@ -385,7 +380,7 @@
           <div class="col-md-6"><strong>Hawan / Griha Pujan:</strong> Cleanse negative spaces</div>
         </div>
         <div class="text-center mt-4">
-            <a href="Other-pooja-services.html" class="btn btn-outline-success">🛕 Browse All Services</a>
+            <a href="other-pooja-services.html" class="btn btn-outline-success">🛕 Browse All Services</a>
         </div>
       </div>
     </div>
@@ -427,11 +422,47 @@
     </div>
   </section>
 
+  <!-- Gallery Section -->
+  <section class="py-5" style="background:#fdf6ec;">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2" style="color:#186732;">📸 Ritual Gallery</h2>
+      <p class="text-muted mb-4">Real moments from Ganga Aarti, pooja rituals and devotee visits at Har Ki Pauri</p>
+    </div>
+    <div class="gallery-slider">
+      <div class="gallery-track">
+        <div class="gallery-item"><img src="img/gallery/gallery-aarti-1.webp" alt="Ganga Aarti at Har Ki Pauri, Haridwar" loading="lazy"><div class="gallery-caption">Ganga Aarti</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-pooja-1.webp" alt="Pooja ritual performed by Tirth Purohit" loading="lazy"><div class="gallery-caption">Pooja Ritual</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-diya-1.webp" alt="Sandhya Aarti with diya at the ghat" loading="lazy"><div class="gallery-caption">Sandhya Aarti</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-pooja-2.webp" alt="Purohit performing pooja with flowers for devotees" loading="lazy"><div class="gallery-caption">Pooja Ritual</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-aarti-2.webp" alt="Evening Ganga Aarti Haridwar" loading="lazy"><div class="gallery-caption">Ganga Aarti</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-snan-1.webp" alt="Ganga Snan ritual at Har Ki Pauri" loading="lazy"><div class="gallery-caption">Ganga Snan</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-pooja-3.webp" alt="Family pooja ritual with Purohit" loading="lazy"><div class="gallery-caption">Family Pooja</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-blessing-1.webp" alt="Purohit blessing a devotee at Haridwar" loading="lazy"><div class="gallery-caption">Purohit Blessings</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-aarti-3.webp" alt="Devotees at Ganga Aarti Haridwar" loading="lazy"><div class="gallery-caption">Ganga Aarti</div></div>
+        <div class="gallery-item"><img src="img/gallery/gallery-family-3.webp" alt="Devotee family with Tirth Purohit at Haridwar" loading="lazy"><div class="gallery-caption">Devotee Family</div></div>
+        <!-- duplicate set for seamless infinite loop -->
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-aarti-1.webp" alt="" loading="lazy"><div class="gallery-caption">Ganga Aarti</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-pooja-1.webp" alt="" loading="lazy"><div class="gallery-caption">Pooja Ritual</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-diya-1.webp" alt="" loading="lazy"><div class="gallery-caption">Sandhya Aarti</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-pooja-2.webp" alt="" loading="lazy"><div class="gallery-caption">Pooja Ritual</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-aarti-2.webp" alt="" loading="lazy"><div class="gallery-caption">Ganga Aarti</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-snan-1.webp" alt="" loading="lazy"><div class="gallery-caption">Ganga Snan</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-pooja-3.webp" alt="" loading="lazy"><div class="gallery-caption">Family Pooja</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-blessing-1.webp" alt="" loading="lazy"><div class="gallery-caption">Purohit Blessings</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-aarti-3.webp" alt="" loading="lazy"><div class="gallery-caption">Ganga Aarti</div></div>
+        <div class="gallery-item" aria-hidden="true"><img src="img/gallery/gallery-family-3.webp" alt="" loading="lazy"><div class="gallery-caption">Devotee Family</div></div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="gallery.html" class="btn fw-bold px-4 text-white" style="background:#f39c12;">🖼️ View More Images</a>
+    </div>
+  </section>
+
   <!-- About Us Section -->
   <section id="about" class="section-padding text-center bg-light">
     <div class="container mx-auto" style="max-width: 850px;">
       <h2 class="fw-bold text-success mb-3">🧘‍♂️ About Purohit Rishabh Haritosh</h2>
-      <p class="text-muted">Serving as a multi-generational Tirth Purohit in the divine landscape of Haridwar, I focus entirely on preserving spiritual authenticity. Our team helps families align perfectly with customary scriptural procedures—transmuting typical stress into tranquil, lifelong spiritual relief.</p>
+      <p class="text-muted">I am a multi-generational Tirth Purohit serving devotees in Haridwar, and my focus is simple: keeping every ritual authentic to scripture. Our team walks families through each ceremony with patience and clarity, so what feels overwhelming becomes a calm, meaningful experience — whether you're standing at the ghat with us, or joining from anywhere in the world through our online pooja service.</p>
       <blockquote class="blockquote border-top border-bottom py-3 my-4 bg-white text-secondary fs-6">
         "गंगे च यमुने चैव गोदावरि सरस्वति। नर्मदा सिन्धु कावेरी जलस्मिन्सन्निधिं कुरु ॥" <br><span class="blockquote-footer mt-1">Rigveda</span>
       </blockquote>
@@ -442,7 +473,7 @@
   <section class="py-5 bg-warning bg-opacity-10 text-center">
     <div class="container">
       <h2 class="fw-bold text-dark">Haridwar Pooja Booking Contact Information</h2>
-      <p class="text-secondary mx-auto mb-3" style="max-width: 650px;">Direct support lines are active 24/7 for families requiring immediate ritual arrangements at Har Ki Pauri.</p>
+      <p class="text-secondary mx-auto mb-3" style="max-width: 650px;">Our support line is open every day for families who need ritual arrangements at Har Ki Pauri — including urgent, same-day bookings.</p>
       <h3 class="text-success fw-bold mb-3">📞 Call / WhatsApp: +91 9528529070</h3>
       <p class="fw-bold text-dark">Location: Har Ki Pauri, Haridwar, Uttarakhand</p>
       <a href="https://wa.me/919528529070" class="btn btn-success px-4 fw-bold">Book Instantly via WhatsApp</a>
@@ -612,7 +643,7 @@
 
                     <div class="accordion-body">
 
-                        Yes. We regularly assist devotees from India and abroad with Pind Daan, Asthi Visarjan, Ganga Aarti, Rudrabhishek and other Vedic ceremonies in Haridwar.
+                        Yes. We regularly assist devotees from India and abroad with Pind Daan, Asthi Visarjan, Ganga Aarti, Rudrabhishek and other Vedic ceremonies in Haridwar. If you can't travel, our <a href="online-pooja-booking.html">Online Pooja Booking</a> lets us perform the ritual on your behalf with your family's sankalp.
 
                     </div>
 
@@ -640,7 +671,7 @@
 
                     <div class="accordion-body">
 
-                        We accept UPI, bank transfer, cash and other secure digital payment methods. Payment details are shared after booking confirmation.
+                        We accept UPI, bank transfer, and cash. For <a href="online-pooja-booking.html">Online Pooja Booking</a>, a minimum ₹500 advance is paid directly via UPI to confirm your date, and the remaining daan-dakshina is given after the pooja and sankalp are complete.
 
                     </div>
 
@@ -672,6 +703,20 @@
 
                     </div>
 
+                </div>
+            </div>
+
+            <!-- FAQ 9 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                        How do I find my own family's Kul Purohit in Haridwar?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Haridwar's Purohits maintain generations-old family records (Bahi Khata). To trace and connect with your own registered Kul Purohit, visit <a href="https://kutumbconnect.in" target="_blank" rel="noopener">Kutumb Connect</a>.
+                    </div>
                 </div>
             </div>
 
